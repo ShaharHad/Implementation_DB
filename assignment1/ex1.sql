@@ -1,0 +1,1 @@
+select count(CustomerId) from customers
