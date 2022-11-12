@@ -30,7 +30,7 @@ def get_income_for_2010():
     rows = get_data_from_db(query)
     return rows[0][0]
 
-def customer_that_like_classical():
+def customer_that_likes_classical():
     query = read_file('ex4.sql')
     rows = get_data_from_db(query)
     return rows[0][0] + " " + rows[0][1]
@@ -38,14 +38,14 @@ def customer_that_like_classical():
 def most_successful_artist():
     query = read_file('ex5.sql')
     rows = get_data_from_db(query)
-    return {"Name": rows[0][0], "Album": str(rows[0][1])}
+    return {"Artist": rows[0][0], "Album": str(rows[0][1])}
 
 def who_is_the_boss():
     query = read_file('ex6.sql')
     rows = get_data_from_db(query)
     return rows[0][0] + " " + rows[0][1]
 
-def costumers_that_likes_quality():
+def costumers_that_like_quality():
     query = read_file('ex7.sql')
     rows = get_data_from_db(query)
     return rows[0][0]
