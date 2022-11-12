@@ -1,4 +1,5 @@
 import sqlite3
+db = 'media_store.db'
 
 def read_file(file):
     f = open(file, 'r')
@@ -7,7 +8,6 @@ def read_file(file):
     return file
 
 def get_data_from_db(query):
-    db = 'media_store.db'
     conn = sqlite3.connect(db)
     cursor = conn.execute(query)
     rows = cursor.fetchall()
@@ -50,21 +50,32 @@ def costumers_that_likes_quality():
 
 
 
+def get_income_for(year):
+    query = read_file('ex2.2.sql')
+    conn = sqlite3.connect(db)
+    cursor = conn.execute(query, (year,))
+    rows = cursor.fetchall()
+    conn.close()
+    return rows[0][0]
 
 if __name__ == "__main__":
-    print(type(customers_count()))
-    print(type(most_productive_artist()))
-    print(type(get_income_for_2010()))
-    print(type(customer_that_like_classical()))
-    print(type(most_successful_artist()))
-    print(type(who_is_the_boss()))
-    print(type(costumers_that_likes_quality()))
+    # print(type(customers_count()))
+    # print(type(most_productive_artist()))
+    # print(type(get_income_for_2010()))
+    # print(type(customer_that_like_classical()))
+    # print(type(most_successful_artist()))
+    # print(type(who_is_the_boss()))
+    print(f"costumers_that_likes_quality type: {type(costumers_that_likes_quality())}")
 
+    # print(f"customers_count: {customers_count()}")
+    # print(f"most_productive_artist: {most_productive_artist()}")
+    # print(f"get_income_for_2010: {get_income_for_2010()}")
+    # print(f"customer_that_like_classical: {customer_that_like_classical()}")
+    # print(f"most_successful_artist: {most_successful_artist()}")
+    # print(f"who_is_the_boss: {who_is_the_boss()}")
+    print(f"costumers_that_likes_quality: {costumers_that_likes_quality()}")
 
-    # print(customers_count())
-    # print(most_productive_artist())
-    # print(get_income_for_2010())
-    # print(customer_that_like_classical())
-    # print(most_successful_artist())
-    # print(who_is_the_boss())
-    # print(costumers_that_likes_quality())
+    # year = '2013'
+    # print(f"get_income_for_{year}: {get_income_for(year)}")
+    # print(type(get_income_for(year)))
+
