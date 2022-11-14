@@ -61,23 +61,23 @@ def get_income_for(year):
     return rows[0][0]
 
 # if __name__ == "__main__":
-    # print(type(customers_count()))
-    # print(type(most_productive_artist()))
-    # print(type(get_income_for_2010()))
-    # print(type(customer_that_like_classical()))
-    # print(type(most_successful_artist()))
-    # print(type(who_is_the_boss()))
-    # print(f"costumers_that_likes_quality type: {type(costumers_that_likes_quality())}")
-
-    # print(f"customers_count: {customers_count()}")
-    # print(f"most_productive_artist: {most_productive_artist()}")
-    # print(f"get_income_for_2010: {get_income_for_2010()}")
-    # print(f"customer_that_like_classical: {customer_that_like_classical()}")
-    # print(f"most_successful_artist: {most_successful_artist()}")
-    # print(f"who_is_the_boss: {who_is_the_boss()}")
-    # print(f"costumers_that_likes_quality: {costumers_that_likes_quality()}")
-
-    # year = '2013'
-    # print(f"get_income_for_{year}: {get_income_for(year)}")
-    # print(type(get_income_for(year)))
+#     print(type(customers_count()))
+#     print(type(most_productive_artist()))
+#     print(type(get_income_for_2010()))
+#     print(type(customer_that_likes_classical()))
+#     print(type(most_successful_artist()))
+#     print(type(who_is_the_boss()))
+#     print(f"costumers_that_likes_quality type: {type(costumers_that_like_quality())}")
+#
+#     print(f"customers_count: {customers_count()}")
+#     print(f"most_productive_artist: {most_productive_artist()}")
+#     print(f"get_income_for_2010: {get_income_for_2010()}")
+#     print(f"customer_that_like_classical: {customer_that_likes_classical()}")
+#     print(f"most_successful_artist: {most_successful_artist()}")
+#     print(f"who_is_the_boss: {who_is_the_boss()}")
+#     print(f"costumers_that_likes_quality: {costumers_that_like_quality()}")
+#
+#     year = '2012'
+#     print(f"get_income_for_{year}: {get_income_for(year)}")
+#     print(type(get_income_for(year)))
 
